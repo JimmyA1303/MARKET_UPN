@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/upn_fondo">
+
+    <View
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="-110dp"
+        android:layout_marginEnd="-90dp"
+        android:background="@drawable/bg_blob_amarillo" />
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginStart="-80dp"
+        android:layout_marginBottom="-70dp"
+        android:background="@drawable/bg_blob_amarillo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fondo_login_card"
+                android:elevation="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingStart="24dp"
+                android:paddingTop="32dp"
+                android:paddingEnd="24dp"
+                android:paddingBottom="24dp">
+
+                <FrameLayout
+                    android:layout_width="88dp"
+                    android:layout_height="88dp"
+                    android:background="@drawable/bg_icon_circle">
+
+                    <ImageView
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="Icono de verificación segura"
+                        android:src="@drawable/ic_shield"
+                        app:tint="@color/upn_mostaza" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:gravity="center"
+                    android:text="Verificación de seguridad"
+                    android:textColor="@color/upn_azul"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="28dp"
+                    android:gravity="center"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="Ingresa el código de 6 dígitos que enviamos a tu correo institucional para autorizar el acceso."
+                    android:textColor="@color/upn_gris"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/layoutOtpBoxes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="12dp">
+
+                    <EditText
+                        android:id="@+id/etOtp1"
+                        android:layout_width="45dp"
+                        android:layout_height="55dp"
+                        android:layout_marginEnd="6dp"
+                        android:background="@drawable/bg_otp_box"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:textColor="@color/upn_azul"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etOtp2"
+                        android:layout_width="45dp"
+                        android:layout_height="55dp"
+                        android:layout_marginEnd="6dp"
+                        android:background="@drawable/bg_otp_box"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:textColor="@color/upn_azul"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etOtp3"
+                        android:layout_width="45dp"
+                        android:layout_height="55dp"
+                        android:layout_marginEnd="6dp"
+                        android:background="@drawable/bg_otp_box"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:textColor="@color/upn_azul"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etOtp4"
+                        android:layout_width="45dp"
+                        android:layout_height="55dp"
+                        android:layout_marginEnd="6dp"
+                        android:background="@drawable/bg_otp_box"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:textColor="@color/upn_azul"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etOtp5"
+                        android:layout_width="45dp"
+                        android:layout_height="55dp"
+                        android:layout_marginEnd="6dp"
+                        android:background="@drawable/bg_otp_box"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:textColor="@color/upn_azul"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etOtp6"
+                        android:layout_width="45dp"
+                        android:layout_height="55dp"
+                        android:background="@drawable/bg_otp_box"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:textColor="@color/upn_azul"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvErrorOtp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#EF4444"
+                    android:textSize="12sp"
+                    android:text="Código incorrecto"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="¿No llegó? Revisa tu carpeta de spam."
+                    android:textColor="#94A3B8"
+                    android:textSize="12sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnReenviar"
+                    style="@style/Widget.Material3.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Reenviar código"
+                    android:textAllCaps="false"
+                    android:textColor="@color/upn_mostaza"
+                    android:textStyle="bold"
+                    app:cornerRadius="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnDialogCancelar"
+                        style="@style/Widget.Material3.Button.TextButton"
+                        android:layout_width="0dp"
+                        android:layout_height="54dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:text="Cancelar"
+                        android:textAllCaps="false"
+                        android:textColor="@color/upn_gris"
+                        android:textSize="16sp"
+                        app:cornerRadius="16dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnDialogVerificar"
+                        android:layout_width="0dp"
+                        android:layout_height="54dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:text="Verificar"
+                        android:textAllCaps="false"
+                        android:textColor="@color/upn_azul"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:backgroundTint="@color/upn_amarillo"
+                        app:cornerRadius="16dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

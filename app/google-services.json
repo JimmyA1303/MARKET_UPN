@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "27537719315",
+    "project_id": "market-upn",
+    "storage_bucket": "market-upn.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27537719315:android:78fb61c5897a04646a7fe6",
+        "android_client_info": {
+          "package_name": "com.example.market_upn"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZH5ducOJAUVB_2l0F_InvC7EKD6saE1Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

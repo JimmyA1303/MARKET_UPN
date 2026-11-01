@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="upn_amarillo">#FFB914</color>
+    <color name="upn_mostaza">#D99B00</color>
+    <color name="upn_azul">#102A43</color>
+    <color name="upn_gris">#64748B</color>
+    <color name="upn_fondo">#F6F8FB</color>
+    <color name="upn_input">#F1F5F9</color>
+    <color name="upn_crema">#FFF2D4</color>
+</resources>

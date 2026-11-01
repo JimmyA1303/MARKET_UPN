@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.MARKET_UPN" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#FFB914</item>
+        <item name="colorSecondary">#102A43</item>
+        <item name="android:windowBackground">#FFFFFF</item>
+        <item name="android:statusBarColor">#FFB914</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+    </style>
+
+    <style name="Theme.MARKET_UPN" parent="Base.Theme.MARKET_UPN" />
+
+</resources>
