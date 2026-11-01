@@ -38,13 +38,6 @@ import androidx.activity.result.contract.ActivityResultContracts;
 public class detalle_producto extends AppCompatActivity {
 
     private static final int MOSTAZA = Color.parseColor("#D99B00");
-    // Al volver de la coordinación, si la compra se hizo, se cierra este detalle
-    private final ActivityResultLauncher<Intent> lanzadorCoordinacion =
-            registerForActivityResult(
-                    new ActivityResultContracts.StartActivityForResult(),
-                    result -> {
-                        if (result.getResultCode() == RESULT_OK) finish();
-                    });
 
     private ImageView ivImagen;
     private TextView tvTitulo, tvPrecio, tvPrecioBarra, tvPrecioOriginal,
@@ -263,9 +256,15 @@ public class detalle_producto extends AppCompatActivity {
             return;
         }
 
-        Intent intent = new Intent(this, coordinacion_entrega.class);
-        intent.putExtra("productoId", p.getId());
-        lanzadorCoordinacion.launch(intent);
+        new MaterialAlertDialogBuilder(this)
+                .setTitle("Confirmar compra")
+                .setMessage(String.format(Locale.US,
+                        "¿Deseas comprar \"%s\" por S/ %.2f?",
+                        seguro(p.getTitulo()), p.getPrecio()))
+                .setPositiveButton("Comprar", (dialog, which) ->
+                        registrarCompra(p, usuario.getUid()))
+                .setNegativeButton("Cancelar", null)
+                .show();
     }
     private void registrarCompra(Producto p, String compradorId) {
         btnComprar.setEnabled(false);

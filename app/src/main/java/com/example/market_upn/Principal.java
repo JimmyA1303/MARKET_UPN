@@ -146,7 +146,7 @@ public class Principal extends AppCompatActivity {
         });
 
         findViewById(R.id.btnPerfil).setOnClickListener(v ->
-                startActivity(new Intent(Principal.this, perfil.class)));
+                mostrarPerfil());
     }
 
     private void escucharMensajesNuevos(FirebaseUser usuario) {

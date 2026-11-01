@@ -14,21 +14,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MARKET_UPN">
         <activity
-            android:name=".mis_logros"
-            android:exported="false" />
-        <activity
-            android:name=".confirmacion_entrega"
-            android:exported="false" />
-        <activity
-            android:name=".Confirmacionentrega"
-            android:exported="false" />
-        <activity
-            android:name=".coordinacion_entrega"
-            android:exported="false" />
-        <activity
-            android:name=".perfil"
-            android:exported="false" />
-        <activity
             android:name=".codigo_verificacion_dialog"
             android:exported="false" />
         <activity
